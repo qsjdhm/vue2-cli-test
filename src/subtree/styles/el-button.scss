@@ -1,0 +1,23 @@
+// 按钮组件样式重置
+.el-button--mini {
+    padding: 5px 12px !important;
+    border-radius: 2px;
+    font-size: 13px !important;
+    height: 30px !important;
+    span {
+        font-size: 13px !important;
+        letter-spacing: 1px;
+    }
+}
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:hover,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:active {
+    border-color: #d4d6d9;
+    color: #999999;
+    background-color: rgba(212, 214, 217, 0.28);
+}
+
+.el-button--medium {
+    border-radius: 2px !important;
+}

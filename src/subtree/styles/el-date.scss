@@ -1,0 +1,24 @@
+// 时间相关组件样式重置
+// DatePicker
+.el-date-editor .el-range-separator {
+    width: auto;
+}
+.el-range-editor--mini.el-input__inner {
+    height: 32px;
+    line-height: 32px;
+}
+.el-range-editor--mini .el-range__icon,
+.el-range-editor--mini .el-range__close-icon {
+    line-height: 24px;
+}
+.el-range-editor--mini .el-range-separator {
+    line-height: 24px;
+}
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+    display: inline-flex !important;
+}
+.el-date-range-picker__header div {
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.85);
+}

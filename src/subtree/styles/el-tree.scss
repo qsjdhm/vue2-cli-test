@@ -1,0 +1,80 @@
+// 树组件样式重置
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: $menuActive;
+    font-weight: bold;
+    .el-button--text {
+        color: $menuActive !important;
+    }
+}
+.el-tree-node__content:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: $menuActive;
+}
+.el-tree {
+    height: 100%;
+    overflow-x: auto;
+
+    .el-tree-node__label {
+        font-size: 13px;
+    }
+
+    .el-tree-node__expand-icon {
+        font-size: 13px;
+        /*color: #999;*/
+    }
+
+    .el-tree-node:focus > .el-tree-node__content {
+        // background-color: $menuActiveText !important;
+        color: $menuActive;
+    }
+    .el-tree-node__content:hover > .custom-tree-node > .tree-icon-node {
+        visibility: visible !important;
+    }
+
+    .custom-tree-node {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        /*justify-content: space-between;*/
+        font-size: 13px;
+        padding-right: 8px;
+
+        .el-button--text {
+            margin-right: 0px;
+            font-size: 12px;
+
+            &:last-child {
+                margin-left: 5px;
+                margin-right: 0px;
+            }
+        }
+
+        .text-style {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 10px;
+        }
+
+        .tree-icon-create {
+            width: 12px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tree-icon-node {
+            visibility: hidden;
+            width: 12px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+            margin-right: 0px;
+        }
+    }
+}

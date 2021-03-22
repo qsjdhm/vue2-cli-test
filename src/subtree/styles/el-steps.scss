@@ -1,0 +1,87 @@
+// 步骤条组件样式重置
+
+.el-step.is-horizontal {
+    .el-step__line {
+        height: 1px;
+        top: 15px;
+        left: 102px;
+        right: 22px;
+        background-color: #d5d7d9;
+    }
+    .el-step__icon {
+        width: 32px;
+        height: 32px;
+        background: #ebedf0;
+        .el-step__icon-inner {
+            color: #999999;
+        }
+    }
+}
+
+.el-step__main {
+    .el-step__title {
+        font-size: 14px;
+        margin-top: -34px;
+        margin-left: 38px;
+        z-index: 9;
+        background: #fff;
+        width: 100px;
+    }
+}
+
+// 当前这一步
+.el-step__head.is-process {
+    color: #2593fc;
+    border-color: #2593fc;
+    .el-step__icon {
+        background: #2593fc;
+        .el-step__icon-inner {
+            color: #fff !important;
+            font-size: 14px;
+        }
+    }
+    .el-step__icon-inner {
+        color: #2593fc;
+    }
+}
+.el-step__title.is-process {
+    color: #222222;
+    font-weight: normal;
+}
+
+// 已经完成的步骤
+.el-step__head.is-success {
+    color: #2593fc;
+    border-color: #2593fc;
+    .el-step__line {
+        background-color: #2593fc !important;
+        .el-step__line-inner {
+            border-width: 0px !important;
+        }
+    }
+    .el-step__icon {
+        background: #fff;
+        .el-step__icon-inner {
+            color: #2593fc !important;
+            font-size: 20px;
+        }
+    }
+}
+.el-step__title.is-success {
+    color: #999999;
+    font-weight: normal;
+}
+
+// 未完成的步骤
+.el-step__head.is-wait {
+    .el-step__icon.is-text {
+        border: 0px solid;
+    }
+    .el-step__icon-inner {
+        color: #999;
+    }
+}
+.el-step__title.is-wait {
+    color: #999;
+    font-weight: normal;
+}

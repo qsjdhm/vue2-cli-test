@@ -1,0 +1,32 @@
+// 对话框组件样式重置
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+    .el-dialog__header {
+        border-bottom: 1px solid #ebedf0;
+        height: 48px;
+        line-height: 48px;
+        text-align: left;
+        color: #222222;
+        padding: 0 0 0 20px;
+        .el-dialog__title {
+            font-size: 16px;
+        }
+    }
+
+    .el-dialog__body {
+        padding: 0 20px;
+    }
+
+    .el-dialog__footer {
+        text-align: right;
+        padding: 20px;
+        border-top: 1px solid #ebedf0;
+        .el-button + .el-button {
+            margin-left: 12px;
+        }
+    }
+}

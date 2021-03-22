@@ -1,0 +1,44 @@
+// // 表单组件样式重置
+// .el-form {
+
+//     .el-form-item {
+//         width: 100%;
+//         padding: 0 10px!important;
+//         margin-bottom: 2px!important;
+
+//         /deep/ .el-form-item__label {
+//             font-weight: 500;
+//             font-size: 13px;;
+//             color: #222222 !important;
+//         }
+//     }
+// }
+// // 表单label位置为top的reset
+// .el-form--label-top .el-form-item__label {
+//     padding-bottom: 0;
+// }
+// .el-form-item__error {
+//     top: 9px !important;
+//     right: 32px !important;
+//     left: auto !important;
+// }
+// // 必填项样式重置
+// .el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before {
+//     content: '';
+//     display: inline-block;
+//     margin-right: 5px;
+//     height: 10px;
+//     width: 2px;
+//     background-color: #f87269;
+// }
+
+// .el-form-item--mini .el-form-item__label {
+//     line-height: 8px;
+// }
+
+.el-form--label-top .el-form-item__label {
+    padding: 0;
+}
+.el-form-item--mini.el-form-item {
+    margin-bottom: 0;
+}

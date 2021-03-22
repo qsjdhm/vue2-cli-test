@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        // 取消装饰器报错提示
+        "experimentalDecorators": true,
+        "allowJs": true
+    },
+    "exclude": ["node_modules", "dist"]
+}

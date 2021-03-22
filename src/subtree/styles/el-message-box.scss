@@ -1,0 +1,12 @@
+// 弹框组件样式重置
+.el-message-box {
+    padding-bottom: 20px;
+
+    .el-message-box__content {
+        padding-top: 25px;
+    }
+
+    .el-message-box__btns {
+        padding-top: 25px;
+    }
+}

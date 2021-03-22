@@ -1,0 +1,9 @@
+{
+    "name": "@package/v-icon",
+    "version": "1.0.0",
+    "description": "iconfont图标组件",
+    "main": "index.js",
+    "author": "zhangyan",
+    "license": "ISC",
+    "gitHead": "ed6c1a364066ed9fb11bb3ea6eaaeb2f26de9605"
+}

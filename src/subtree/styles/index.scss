@@ -1,0 +1,27 @@
+// cover some element-ui styles
+@import './el-input.scss';
+// @import './el-input-number.scss';
+// @import './el-button.scss';
+// @import './el-select.scss';
+// @import './el-steps.scss';
+// @import './el-checkbox.scss';
+// @import './el-date.scss';
+// @import './el-upload.scss';
+@import './el-table.scss';
+// @import './el-pagination.scss';
+@import './el-form.scss';
+@import './el-dialog.scss';
+// @import './el-message-box.scss';
+@import './el-tree.scss';
+// @import './el-tabs.scss';
+// @import './el-nav-menu.scss';
+// @import './el-tooltip.scss';
+// @import './el-dropdown.scss';
+// @import './el-breadcrumb.scss';
+
+/* ================= pop start ================= */
+// 用于树形中
+.tree-popover-menu {
+    min-width: 60px !important;
+    padding: 0;
+}

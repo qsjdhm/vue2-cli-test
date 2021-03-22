@@ -1,0 +1,38 @@
+// 输入框组件样式重置
+.el-input__inner {
+    border-radius: 2px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.el-input {
+    min-height: 32px;
+    line-height: 32px;
+}
+
+.el-input--mini {
+    .el-input__inner {
+        height: 32px;
+        line-height: 32px;
+    }
+}
+
+.el-input--suffix {
+    .el-input__inner {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
+
+.el-date-editor.el-input--suffix {
+    .el-input__inner {
+        padding-left: 30px !important;
+        padding-right: 12px !important;
+    }
+}
+
+.el-textarea {
+    textarea {
+        border-radius: 2px !important;
+    }
+}

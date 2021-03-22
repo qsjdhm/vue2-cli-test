@@ -1,0 +1,14 @@
+// 复选框相关组件样式重置
+.el-checkbox {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    .el-checkbox__label {
+        font-size: 13px !important;
+        color: #444444 !important;
+    }
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #2593fc !important;
+    border-color: #2593fc !important;
+}

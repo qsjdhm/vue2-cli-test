@@ -1,0 +1,5 @@
+// 文字提示组件样式重置
+// element 超出隐藏显示样式修改
+.el-tooltip__popper {
+    max-width: 500px !important;
+}

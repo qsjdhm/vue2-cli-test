@@ -1,0 +1,233 @@
+// 表格组件样式重置
+.el-table {
+    // table表格header对齐方式、加粗、字体大小修改
+    .el-table__header-wrapper {
+        height: 34px !important;
+        line-height: 34px;
+    }
+
+    .el-table__header-wrapper,
+    .el-table__fixed,
+    .el-table__fixed-right {
+        .el-table__header {
+            th {
+                font-weight: bold !important;
+                color: #222;
+                padding: 0 !important;
+                height: 32px;
+                line-height: 32px;
+                font-size: 13px;
+                letter-spacing: 1px;
+                text-align: center;
+                background: #f0f2f5;
+                border-right: none;
+            }
+
+            .el-table--border th {
+                border-right: none;
+            }
+        }
+    }
+
+    .el-table--border {
+        border-bottom: 0px solid #dfe6ec !important;
+    }
+
+    .el-table--group,
+    .el-table--border {
+        border-bottom: 0px solid #dfe6ec !important;
+    }
+
+    // table表格body字体大小
+    .el-table__body-wrapper {
+        // border-left: 1px solid #dfe6ec !important;
+        // border-bottom: 1px solid #dfe6ec !important;
+        .el-table__body {
+            tbody {
+                .el-table__row {
+                    height: 32px !important;
+                    line-height: 32px !important;
+                    overflow: hidden;
+
+                    .el-button--medium {
+                        padding: 8px 5px !important;
+                    }
+
+                    .el-button + .el-button {
+                        margin-left: 0px;
+                    }
+
+                    .el-table--medium td {
+                        padding: 0 !important;
+                    }
+
+                    td {
+                        padding: 0 !important;
+
+                        //border: none;
+                        .cell {
+                            span {
+                                font-size: 12px;
+                                letter-spacing: 1px;
+                                // color: red;
+                            }
+
+                            div {
+                                span {
+                                    font-size: 12px;
+                                    letter-spacing: 1px;
+                                    // color: rgba(0,0,0,0.15);
+                                }
+                            }
+                        }
+                    }
+
+                    .el-input__inner {
+                        height: 26px;
+                        line-height: 26px;
+                    }
+                }
+
+                .current-row td {
+                    .table-text {
+                        //border-bottom: 1px solid #fff;
+                    }
+
+                    span {
+                        //color: #fff !important;
+                        // background: #fff !important;
+                    }
+                }
+
+                //   .cell{
+                //     height: 32px !important;
+                //     line-height: 32px!important;
+                //   }
+            }
+        }
+    }
+}
+
+//表格斑马线颜色重置
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: rgba($color: #f3f6fe, $alpha: 0.6);
+}
+
+//表格悬浮背景颜色设置
+.el-table__body tr:hover > td {
+    background-color: rgba(72, 143, 255, 0.15) !important;
+}
+
+.el-table__body tr.current-row > td {
+    background-color: rgba(72, 143, 255, 0.15) !important;
+}
+
+/* 解决表头错位问题 */
+.el-table th.gutter {
+    display: table-cell !important;
+}
+
+.el-table colgroup.gutter {
+    display: table-cell !important;
+}
+
+// zhangle 隐藏 table 底部表框
+.el-table::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+}
+
+.el-table--border::after {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+}
+
+// 滚动条的宽度
+// /deep/ .el-table__body-wrapper::-webkit-scrollbar {
+//     width: 10px; // 横向滚动条
+//     height: 10px; // 纵向滚动条 必写
+// }
+
+// // 滚动条的滑块
+// /deep/ .el-table__body-wrapper::-webkit-scrollbar-thumb {
+//     background-color: #ddd;
+//     border-radius: 3px;
+// }
+
+// /* 解决表头错位问题 */
+// /deep/ .el-table th.gutter {
+//     display: table-cell !important;
+// }
+
+// /deep/ .el-table colgroup.gutter {
+//     display: table-cell !important;
+// }
+
+.el-table tr {
+    height: 34px;
+}
+
+.fixed-width {
+    .el-button--mini {
+        padding: 7px 10px;
+        width: 60px;
+    }
+}
+
+.el-table-column--selection .cell {
+    padding-right: 10px;
+}
+
+.cell {
+    .el-tag {
+        margin-right: 0px;
+    }
+}
+
+.small-padding {
+    .cell {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.status-col {
+    .cell {
+        padding: 0 10px;
+        text-align: center;
+
+        .el-tag {
+            margin-right: 0px;
+        }
+    }
+}
+
+// 修复table表格内按钮间距过宽的问题
+.el-table .el-button.el-button--text {
+    padding: 5px 0px !important;
+}
+
+.el-table .el-button + .el-button {
+    margin-left: 5px !important;
+}
+
+// 修复操作栏固定列高度过高导致与其他列文字不平齐
+.el-table__fixed-right td {
+    padding: 0px !important;
+}
+
+.el-table__fixed-right tr {
+    height: 32px !important;
+}
+
+.el-table__fixed td {
+    padding: 0px !important;
+}
+
+.el-table__fixed tr {
+    height: 32px !important;
+}

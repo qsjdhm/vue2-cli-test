@@ -1,0 +1,17 @@
+// 下拉框组件样式重置
+.el-select {
+    .el-input {
+        .el-select__caret {
+            height: 32px;
+            line-height: 32px;
+        }
+    }
+}
+
+// 重写 el-selecttree组件样式
+.el-select-dropdown.el-popper.elTreeSelectMenu {
+    width: 300px;
+    .el-tree {
+        overflow: hidden;
+    }
+}

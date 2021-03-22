@@ -1,0 +1,9 @@
+{
+    "name": "@package/vt-view-back",
+    "version": "1.0.0",
+    "description": "详情标题组件",
+    "main": "index.js",
+    "author": "lizhiming",
+    "license": "ISC",
+    "gitHead": "ed6c1a364066ed9fb11bb3ea6eaaeb2f26de9605"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "@package/v-from",
+    "version": "2.0.0",
+    "description": "表单组件",
+    "main": "index.js",
+    "author": "zhangyan",
+    "license": "ISC",
+    "gitHead": "ed6c1a364066ed9fb11bb3ea6eaaeb2f26de9605"
+}

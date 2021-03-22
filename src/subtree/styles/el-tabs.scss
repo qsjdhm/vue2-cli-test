@@ -1,0 +1,36 @@
+// 标签页组件样式重置
+.el-tabs {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .el-tabs__item {
+        padding: 0 20px !important;
+        height: 40px;
+    }
+    .el-tabs__item.is-active {
+        color: $systemColor !important;
+        font-weight: bold;
+    }
+
+    .el-tabs__active-bar.is-top {
+        background-color: $systemColor !important;
+    }
+    .el-tabs__item {
+        height: 46px !important;
+        line-height: 46px !important;
+        font-size: 14px !important;
+    }
+    .el-tabs__content {
+        top: 46px !important;
+        // todo: ?
+        // position: absolute !important;
+        //border-top: 2px solid #f0f1f4;
+    }
+    .el-tabs__nav-wrap {
+        padding-left: 20px;
+        background: #fff;
+    }
+    .el-tabs__nav-wrap::after {
+        background-color: #f0f1f4;
+    }
+}
